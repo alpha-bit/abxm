@@ -1,4 +1,4 @@
 ABXM
 ====
 
-ABXMonad window manager
+The ABXMonad window manager
