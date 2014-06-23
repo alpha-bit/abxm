@@ -1,0 +1,36 @@
+name: abxm
+version: 0.1.0.0
+cabal-version: >=1.4
+build-type: Simple
+license: GPL-3
+license-file: LICENSE
+copyright: (c) Rui Damas, 2014
+maintainer: rui.damas@gmail.com
+stability: unstable
+homepage: http://abxm.alphabit.org/
+synopsis: The ABXMonad window manager
+description: ABXMonad is a costumization of the XMonad window manager
+             providing easy configuration and additional libraries.
+category: System
+author: Rui Damas
+data-dir: ""
+ 
+library
+    build-depends: X11 -any, base -any, containers -any,
+                   directory -any, extensible-exceptions -any, mtl -any, xmonad -any,
+                   xmonad-contrib -any
+    exposed-modules: XMonad.Actions.FloatMatrix XMonad.Config.ABC
+                     XMonad.Config.ABCDefaults XMonad.Config.AlphaMinD
+                     XMonad.Prompt.Terminator XMonad.WheezyBugFixes
+    exposed: True
+    buildable: True
+    hs-source-dirs: src
+ 
+executable abxm
+    build-depends: X11 -any, base -any, containers -any,
+                   directory -any, extensible-exceptions -any, mtl -any, xmonad -any,
+                   xmonad-contrib -any
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+ 
