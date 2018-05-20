@@ -1,4 +1,4 @@
 abxm
 ====
 
-The ABXMonad window manager
+The Alpha Bit XMonad window manager
